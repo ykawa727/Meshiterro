@@ -1,3 +1,5 @@
 class PostImage < ApplicationRecord
-  belong_to :user
+  belongs_to :user
+  attachment :image #ここを追加（_idは含めない）
+
 end
